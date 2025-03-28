@@ -1,0 +1,41 @@
+<svg width="360" height="640" viewBox="0 0 360 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="640" fill="#00833E"/>
+  <rect x="0" y="0" width="360" height="80" fill="#006633"/>
+  
+  <rect x="20" y="100" width="320" height="80" rx="10" fill="white"/>
+  <rect x="40" y="120" width="200" height="20" rx="5" fill="#00833E"/>
+  <rect x="40" y="150" width="280" height="10" rx="5" fill="#F5F5F5"/>
+  
+  <rect x="20" y="200" width="320" height="160" rx="10" fill="white"/>
+  <rect x="40" y="220" width="150" height="20" rx="5" fill="#00833E"/>
+  
+  <rect x="40" y="250" width="280" height="40" rx="5" fill="#F5F5F5"/>
+  <rect x="40" y="300" width="280" height="40" rx="5" fill="#F5F5F5"/>
+  
+  <rect x="20" y="380" width="320" height="240" rx="10" fill="white"/>
+  <rect x="40" y="400" width="180" height="20" rx="5" fill="#00833E"/>
+  
+  <rect x="40" y="430" width="280" height="1" fill="#E0E0E0"/>
+  <rect x="40" y="470" width="280" height="1" fill="#E0E0E0"/>
+  <rect x="40" y="510" width="280" height="1" fill="#E0E0E0"/>
+  <rect x="40" y="550" width="280" height="1" fill="#E0E0E0"/>
+  <rect x="40" y="590" width="280" height="1" fill="#E0E0E0"/>
+  
+  <circle cx="60" cy="450" r="10" fill="#00833E"/>
+  <rect x="80" y="445" width="100" height="10" rx="5" fill="#333333"/>
+  <rect x="240" y="445" width="60" height="10" rx="5" fill="#00833E"/>
+  
+  <circle cx="60" cy="490" r="10" fill="#00833E"/>
+  <rect x="80" y="485" width="100" height="10" rx="5" fill="#333333"/>
+  <rect x="240" y="485" width="60" height="10" rx="5" fill="#00833E"/>
+  
+  <circle cx="60" cy="530" r="10" fill="#00833E"/>
+  <rect x="80" y="525" width="100" height="10" rx="5" fill="#333333"/>
+  <rect x="240" y="525" width="60" height="10" rx="5" fill="#00833E"/>
+  
+  <circle cx="60" cy="570" r="10" fill="#00833E"/>
+  <rect x="80" y="565" width="100" height="10" rx="5" fill="#333333"/>
+  <rect x="240" y="565" width="60" height="10" rx="5" fill="#00833E"/>
+  
+  <text x="180" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">HBL Mobile Transfers</text>
+</svg>
