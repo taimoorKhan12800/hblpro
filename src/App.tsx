@@ -152,10 +152,10 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50 flex items-center justify-center">
                   <FaShieldAlt />
                 </div>
-                <div className="p-4">
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Secure Banking</h3>
                   <p className="text-gray-600">Bank with confidence knowing your data is protected with advanced security measures.</p>
                 </div>
@@ -167,10 +167,10 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50 flex items-center justify-center">
                   <FaSync />
                 </div>
-                <div className="p-4">
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Real-time Updates</h3>
                   <p className="text-gray-600">Get instant notifications for all your account activities and transactions.</p>
                 </div>
@@ -182,10 +182,10 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50 flex items-center justify-center">
                   <FaLock />
                 </div>
-                <div className="p-4">
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Biometric Login</h3>
                   <p className="text-gray-600">Quick and secure access with fingerprint or face recognition authentication.</p>
                 </div>
@@ -197,10 +197,10 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50 flex items-center justify-center">
                   <FaUserFriends />
                 </div>
-                <div className="p-4">
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Easy Transfers</h3>
                   <p className="text-gray-600">Send money to friends and family with just a few taps on your screen.</p>
                 </div>
