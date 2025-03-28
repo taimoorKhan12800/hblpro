@@ -20,8 +20,14 @@ function App() {
     }, 3000);
   };
 
+  const s1 = "/main-image.png";
+  const s2 = "/main-image.png";
+  const s3 = "/main-image.png";
+  const s4 = "/main-image.png";
+  const s5 = "/main-image.png";
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-sans text-gray-800 w-full max-w-full overflow-x-hidden px-4 sm:px-6 lg:px-8">
+<div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-sans text-gray-800 w-screen max-w-[100vw] overflow-x-hidden px-4 sm:px-6 lg:px-8 box-border">
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
@@ -140,49 +146,65 @@ function App() {
             <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Discover the powerful features that make HBL Mobile the perfect banking companion for your daily financial needs.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="flex overflow-x-auto pb-8 space-x-6 snap-x scrollbar-hide">
             <motion.div 
-              className="bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300"
-              whileHover={{ y: -5 }}
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
+              whileHover={{ scale: 1.05 }}
             >
-              <div className="text-green-700 text-2xl md:text-3xl mb-3 md:mb-4">
-                <FaShieldAlt />
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                  <FaShieldAlt />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Secure Banking</h3>
+                  <p className="text-gray-600">Bank with confidence knowing your data is protected with advanced security measures.</p>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">Secure Banking</h3>
-              <p className="text-gray-600 text-sm md:text-base">Bank with confidence knowing your data is protected with advanced security measures.</p>
             </motion.div>
             
             <motion.div 
-              className="bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300"
-              whileHover={{ y: -5 }}
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
+              whileHover={{ scale: 1.05 }}
             >
-              <div className="text-green-700 text-2xl md:text-3xl mb-3 md:mb-4">
-                <FaSync />
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                  <FaSync />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Real-time Updates</h3>
+                  <p className="text-gray-600">Get instant notifications for all your account activities and transactions.</p>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">Real-time Updates</h3>
-              <p className="text-gray-600 text-sm md:text-base">Get instant notifications for all your account activities and transactions.</p>
             </motion.div>
             
             <motion.div 
-              className="bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300"
-              whileHover={{ y: -5 }}
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
+              whileHover={{ scale: 1.05 }}
             >
-              <div className="text-green-700 text-2xl md:text-3xl mb-3 md:mb-4">
-                <FaLock />
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                  <FaLock />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Biometric Login</h3>
+                  <p className="text-gray-600">Quick and secure access with fingerprint or face recognition authentication.</p>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">Biometric Login</h3>
-              <p className="text-gray-600 text-sm md:text-base">Quick and secure access with fingerprint or face recognition authentication.</p>
             </motion.div>
             
             <motion.div 
-              className="bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300"
-              whileHover={{ y: -5 }}
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
+              whileHover={{ scale: 1.05 }}
             >
-              <div className="text-green-700 text-2xl md:text-3xl mb-3 md:mb-4">
-                <FaUserFriends />
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <div className="text-green-700 text-2xl md:text-3xl p-4 bg-green-50">
+                  <FaUserFriends />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Easy Transfers</h3>
+                  <p className="text-gray-600">Send money to friends and family with just a few taps on your screen.</p>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">Easy Transfers</h3>
-              <p className="text-gray-600 text-sm md:text-base">Send money to friends and family with just a few taps on your screen.</p>
             </motion.div>
           </div>
         </div>
@@ -196,45 +218,70 @@ function App() {
             <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Take a look at the sleek and intuitive interface of the HBL Mobile Banking app.</p>
           </div>
           
-          <div className="flex flex-col md:flex-row overflow-x-auto pb-8 space-y-4 md:space-y-0 md:space-x-6 snap-x scrollbar-hide">
+          <div className="flex overflow-x-auto pb-8 space-x-6 snap-x scrollbar-hide">
             <motion.div 
-              className="flex-shrink-0 w-full md:w-72 md:w-80 snap-center"
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/main-image.png" alt="Login Screen" className="rounded-xl shadow-md w-full h-auto object-cover" />
-              <p className="text-center mt-3 text-sm md:text-base text-gray-600 font-medium">Login Screen</p>
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <img src={s1} alt="Login Screen" className="w-full h-auto object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Login Screen</h3>
+                  <p className="text-gray-600">Secure and easy login with biometric authentication</p>
+                </div>
+              </div>
             </motion.div>
             
             <motion.div 
-              className="flex-shrink-0 w-full md:w-72 md:w-80 snap-center"
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/main-image.png" alt="Dashboard" className="rounded-xl shadow-md w-full h-auto object-cover" />
-              <p className="text-center mt-3 text-sm md:text-base text-gray-600 font-medium">Dashboard</p>
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <img src={s2} alt="Dashboard" className="w-full h-auto object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Dashboard</h3>
+                  <p className="text-gray-600">Overview of your accounts and transactions</p>
+                </div>
+              </div>
             </motion.div>
             
             <motion.div 
-              className="flex-shrink-0 w-full md:w-72 md:w-80 snap-center"
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/main-image.png" alt="Transfer Money" className="rounded-xl shadow-md w-full h-auto object-cover" />
-              <p className="text-center mt-3 text-sm md:text-base text-gray-600 font-medium">Transfer Money</p>
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <img src={s3} alt="Transfer Money" className="w-full h-auto object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Transfer Money</h3>
+                  <p className="text-gray-600">Quick and secure money transfers</p>
+                </div>
+              </div>
             </motion.div>
             
             <motion.div 
-              className="flex-shrink-0 w-full md:w-72 md:w-80 snap-center"
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/main-image.png" alt="Transactions" className="rounded-xl shadow-md w-full h-auto object-cover" />
-              <p className="text-center mt-3 text-sm md:text-base text-gray-600 font-medium">Transactions</p>
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <img src={s4} alt="Transactions" className="w-full h-auto object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Transactions</h3>
+                  <p className="text-gray-600">View and manage your transaction history</p>
+                </div>
+              </div>
             </motion.div>
             
             <motion.div 
-              className="flex-shrink-0 w-full md:w-72 md:w-80 snap-center"
+              className="flex-shrink-0 w-64 md:w-72 snap-center"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/main-image.png" alt="Settings" className="rounded-xl shadow-md w-full h-auto object-cover" />
-              <p className="text-center mt-3 text-sm md:text-base text-gray-600 font-medium">Settings</p>
+              <div className="rounded-xl shadow-md overflow-hidden">
+                <img src={s5} alt="Settings" className="w-full h-auto object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">Settings</h3>
+                  <p className="text-gray-600">Customize your app preferences</p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
