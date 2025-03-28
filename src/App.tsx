@@ -20,11 +20,11 @@ function App() {
     }, 3000);
   };
 
-  const s1 = "/main-image.png";
-  const s2 = "/main-image.png";
-  const s3 = "/main-image.png";
-  const s4 = "/main-image.png";
-  const s5 = "/main-image.png";
+  const s1 = "/images/screenshot1.webp";
+  const s2 = "/images/screenshot2.webp";
+  const s3 = "/images/screenshot3.webp";
+  const s4 = "/images/screenshot4.webp";
+  const s5 = "/images/screenshot5.webp";
 
   return (
 <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-sans text-gray-800 w-screen max-w-[100vw] overflow-x-hidden px-4 sm:px-6 lg:px-8 box-border">
@@ -224,8 +224,8 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <img src={s1} alt="Login Screen" className="w-full h-auto object-cover" />
-                <div className="p-4">
+                <img src={s1} alt="Login Screen" className="w-full h-96 object-contain rounded-xl" />
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Login Screen</h3>
                   <p className="text-gray-600">Secure and easy login with biometric authentication</p>
                 </div>
@@ -237,8 +237,8 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <img src={s2} alt="Dashboard" className="w-full h-auto object-cover" />
-                <div className="p-4">
+                <img src={s2} alt="Dashboard" className="w-full h-96 object-contain rounded-xl" />
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Dashboard</h3>
                   <p className="text-gray-600">Overview of your accounts and transactions</p>
                 </div>
@@ -250,8 +250,8 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <img src={s3} alt="Transfer Money" className="w-full h-auto object-cover" />
-                <div className="p-4">
+                <img src={s3} alt="Transfer Money" className="w-full h-96 object-contain rounded-xl" />
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Transfer Money</h3>
                   <p className="text-gray-600">Quick and secure money transfers</p>
                 </div>
@@ -263,8 +263,8 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <img src={s4} alt="Transactions" className="w-full h-auto object-cover" />
-                <div className="p-4">
+                <img src={s4} alt="Transactions" className="w-full h-96 object-contain rounded-xl" />
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Transactions</h3>
                   <p className="text-gray-600">View and manage your transaction history</p>
                 </div>
@@ -276,8 +276,8 @@ function App() {
               whileHover={{ scale: 1.05 }}
             >
               <div className="rounded-xl shadow-md overflow-hidden">
-                <img src={s5} alt="Settings" className="w-full h-auto object-cover" />
-                <div className="p-4">
+                <img src={s5} alt="Settings" className="w-full h-96 object-contain rounded-xl" />
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-2">Settings</h3>
                   <p className="text-gray-600">Customize your app preferences</p>
                 </div>
@@ -290,21 +290,16 @@ function App() {
       {/* Download Section */}
       <section id="download" className="py-8 md:py-16 bg-gradient-to-b from-white to-gray-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-4">Get HBL Mobile App Now</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-2">Get HBL Mobile App Now</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-sm md:text-base">
             Download our app and experience the future of banking right in your hands. It's free, secure, and constantly updated with new features.
           </p>
           
           <div className="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center justify-between">
-              <div className="mb-6 md:mb-0 md:mr-8">
-                <img src="/images/screenshot1.svg" alt="QR Code" className="w-40 h-40 mx-auto" />
-                <p className="text-sm text-gray-500 mt-2">Scan to download</p>
-              </div>
-              
-              <div className="flex flex-col items-center md:items-start">
-                <h3 className="text-2xl font-semibold mb-4 text-green-700">Direct Download</h3>
-                <ul className="text-left mb-6 text-gray-600 text-sm md:text-base">
+            <div className="flex flex-col items-center text-center">
+              <div className="space-y-4 mb-6">
+                <h3 className="text-2xl font-semibold text-green-700">Direct Download</h3>
+                <ul className="text-left text-gray-600 text-sm md:text-base">
                   <li className="flex items-center mb-2">
                     <FaChevronDown className="text-green-700 mr-2" /> Latest version
                   </li>
@@ -315,18 +310,18 @@ function App() {
                     <FaChevronDown className="text-green-700 mr-2" /> Size: 15MB
                   </li>
                 </ul>
-                
-                <motion.button 
-                  className="bg-green-700 hover:bg-green-800 text-white font-bold py-2.5 px-6 rounded-lg shadow-lg flex items-center justify-center"
-                  onClick={handleDownload}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  disabled={downloadStarted}
-                >
-                  <FaDownload className="mr-2" /> 
-                  {downloadStarted ? 'Downloading...' : 'Download APK'}
-                </motion.button>
               </div>
+              
+              <motion.button 
+                className="bg-green-700 hover:bg-green-800 text-white font-bold py-2.5 px-6 rounded-lg shadow-lg flex items-center justify-center w-full max-w-xs mx-auto"
+                onClick={handleDownload}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                disabled={downloadStarted}
+              >
+                <FaDownload className="mr-2" /> 
+                {downloadStarted ? 'Downloading...' : 'Download APK'}
+              </motion.button>
             </div>
           </div>
         </div>
@@ -363,26 +358,18 @@ function App() {
             
             <div>
               <h3 className="text-lg font-semibold mb-4 text-green-400">Quick Links</h3>
-              <ul className="space-y-2 text-sm md:text-base">
-                <li>
-                  <a href="#features" className="text-gray-400 hover:text-white transition-colors duration-200">Features</a>
-                </li>
-                <li>
-                  <a href="#screenshots" className="text-gray-400 hover:text-white transition-colors duration-200">Screenshots</a>
-                </li>
-                <li>
-                  <a href="#download" className="text-gray-400 hover:text-white transition-colors duration-200">Download</a>
-                </li>
-                <li>
-                  <a 
-                    href="#" 
-                    onClick={(e) => {e.preventDefault(); setIsContactOpen(true);}} 
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
+              <div className="grid grid-cols-2 gap-4 text-sm md:text-base">
+                <a href="#features" className="text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+                <a href="#screenshots" className="text-gray-400 hover:text-white transition-colors duration-200">Screenshots</a>
+                <a href="#download" className="text-gray-400 hover:text-white transition-colors duration-200">Download</a>
+                <a 
+                  href="#" 
+                  onClick={(e) => {e.preventDefault(); setIsContactOpen(true);}} 
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  Contact Us
+                </a>
+              </div>
             </div>
             
             <div>
