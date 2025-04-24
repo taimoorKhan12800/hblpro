@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload, FaShieldAlt, FaLock, FaSync, FaUserFriends, FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -545,6 +546,7 @@ function App() {
           </motion.div>
         </div>
       )}
+      <SpeedInsights />
     </>
   );
 }
